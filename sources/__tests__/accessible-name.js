@@ -400,6 +400,7 @@ test.each([
 	// https://www.w3.org/TR/svg-aam-1.0/
 	[`<svg data-test><title><em>greek</em> rho</title></svg>`, "greek rho"],
 	[`<button title="" data-test>click me</button>`, "click me"],
+	[`<button title="" data-test>abc<span> - </span>abc</button>`, "abc - abc"],
 	[
 		`<button title="You should really click this" data-test>click me</button>`,
 		"click me",
